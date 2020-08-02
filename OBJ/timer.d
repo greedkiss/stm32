@@ -32,3 +32,4 @@
 .\obj\timer.o: .\STM32F10x_FWLib\inc\misc.h
 .\obj\timer.o: .\HARDWARE\RS485\rs485.h
 .\obj\timer.o: .\HARDWARE\LED\led.h
+.\obj\timer.o: .\DEMO\demo.h

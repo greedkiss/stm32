@@ -22,7 +22,7 @@
 #include "demo.h"
 #include "wifi.h"
 
-
+//5 3 2 0 1 0 0
 int main(void)
 { 
 	delay_init();	    							//延时函数初始化	  
@@ -32,7 +32,6 @@ int main(void)
 	KeyInit();										//初始化按键
 	ESP8266_init();
 	RS485_Init(9600);								//初始化485串口 波物率为9600
-	printf("chongqi\n");
 	TIMER3_Init(999,71);							//定时器3初始化 周期1ms
 	WIFI_init();
 

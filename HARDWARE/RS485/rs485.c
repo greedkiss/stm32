@@ -227,7 +227,6 @@ void UartDriver(void)
 			printf("数据: %d,  %c   %x", (int)buf[0], buf[0], (int)buf[0]);
 			uart4SendChars(buf, len);
 			
-			
 			/* 判断校验码正确后 无论是读还是写 都清零485忙标志，表示收到应答，释放485，可进行其它命令操作 */
 			RS485Busy = 0;										
 		}

@@ -110,7 +110,6 @@ void WIFI_init(void)
 }
 
 void tcp_connect(int len){
-	
 	uart4SendChars(SERVER,sizeof(SERVER));  
 	delay_ms(1000);
 	

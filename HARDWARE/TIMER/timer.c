@@ -10,6 +10,7 @@
 #include "timer.h"
 #include "rs485.h"
 #include "led.h"
+#include "demo.h"
 
 /***************************************************************************************************************
 @函数名称：定时器3初始化设置函数
@@ -53,6 +54,7 @@ void TIM3_IRQHandler(void)
 	{
 		UartRxMonitor(1);
 		LedPoint(500);//-----------------------------------------------LED指示灯周期闪烁
+		countTime();
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);//------------------清除TIM3中断
 	}
 }

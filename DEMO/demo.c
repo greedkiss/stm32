@@ -6,6 +6,10 @@
 #include "usart.h"
 #include "delay.h"
 
+int device = 5;
+u32 time = 0;
+int i = 1;
+
 
 
 /****************************************************************************************************
@@ -22,19 +26,33 @@ void TestOpr(void)
 	//NH3传感器
 	//设备号0x05
 	if(!RS485Busy){
-		RS485_RW_Opr(0x05,READ,0X00,0X01);
+//		if(device == 5){
+//			RS485_RW_Opr(0x05, READ, 0x00, 0x01);
+//		}else if(device == 4){
+//			RS485_RW_Opr(0x04, READ, 0x00, 0x02);
+//		}else if(device == 3){
+//			RS485_RW_Opr(0x03, READ, 0x00, 0x03);
+//		}else if(device == 2){
+//			RS485_RW_Opr(0x02, READ, 0x00, 0x02);
+//		}else if(device == 1){
+//			RS485_RW_Opr(0x01, READ, 0x00, 0x02);
+//		}else if(device == 0){
+//		//一个轮询已经做完，睡眠间隔时间
+//			time = 0;
+//			device = 6;
+//		}
+		if(i == 1){
+			i = 0;
+			RS485_RW_Opr(0x02, READ, 0x00, 0x02);
+		}
+		else if(i == 0){
+			i = 1;
+			printf("氨气\n");
+			RS485_RW_Opr(0x05, READ, 0x00, 0x01);
+		}
 	}
-	
-//	if (!RS485Busy)								//判断485总线状态 0空闲 1忙
-//	{
-//		ucKeyVal = KeyScan(0);					//获取按键值
-//		if (ucKeyVal == PRES_READ)				//按下读按键
-//		{
-//			RS485_RW_Opr(0x05,READ,0X00,0X01);	//向地址为01的从机发送读命令，读取从机寄存器01保存的数据 长度为1个字节
-//		}
-//		else if (ucKeyVal == PRES_WRITE)		//按下写按键
-//		{
-//			RS485_RW_Opr(0x01,WRITE,0X01,0x55);	//向地址为01的从机发送写命令，向从机寄存器01的地方写入0x55
-//		}
-//	}
+}
+
+void countTime(){
+	time++;
 }

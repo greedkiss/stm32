@@ -1,5 +1,5 @@
 Dependencies for Project 'RS485_HOST_PROGRAME', Target 'Project': (DO NOT MODIFY !)
-F (.\USER\main.c)(0x5F20BD61)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (.\USER\main.c)(0x5F22F783)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (.\HARDWARE\LED\led.h)(0x5F06C69B)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
 I (.\USER\stm32f10x.h)(0x4D783CB4)
@@ -131,7 +131,7 @@ I (.\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (.\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (.\HARDWARE\RS485\rs485.c)(0x5F20BD3F)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\rs485.o --omf_browse .\obj\rs485.crf --depend .\obj\rs485.d)
+F (.\HARDWARE\RS485\rs485.c)(0x5F26198F)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\rs485.o --omf_browse .\obj\rs485.crf --depend .\obj\rs485.d)
 I (HARDWARE\RS485\rs485.h)(0x5F06B97D)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
 I (.\USER\stm32f10x.h)(0x4D783CB4)
@@ -199,7 +199,7 @@ I (.\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (.\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (.\HARDWARE\TIMER\timer.c)(0x5EBA5996)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\timer.o --omf_browse .\obj\timer.crf --depend .\obj\timer.d)
+F (.\HARDWARE\TIMER\timer.c)(0x5F2304E8)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\timer.o --omf_browse .\obj\timer.crf --depend .\obj\timer.d)
 I (HARDWARE\TIMER\timer.h)(0x5F06A50C)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
 I (.\USER\stm32f10x.h)(0x4D783CB4)
@@ -232,6 +232,7 @@ I (.\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
 I (.\HARDWARE\RS485\rs485.h)(0x5F06B97D)
 I (.\HARDWARE\LED\led.h)(0x5F06C69B)
+I (.\DEMO\demo.h)(0x5EBA4BBC)
 F (.\HARDWARE\KEY\key.c)(0x5EBA4E5A)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\key.o --omf_browse .\obj\key.crf --depend .\obj\key.d)
 I (HARDWARE\KEY\key.h)(0x5F06A4EA)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
@@ -264,7 +265,7 @@ I (.\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (.\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
 I (.\SYSTEM\delay\delay.h)(0x555AC82C)
-F (.\HARDWARE\WIFI\wifi.c)(0x5F20BB46)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\wifi.o --omf_browse .\obj\wifi.crf --depend .\obj\wifi.d)
+F (.\HARDWARE\WIFI\wifi.c)(0x5F236CFD)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\wifi.o --omf_browse .\obj\wifi.crf --depend .\obj\wifi.d)
 I (HARDWARE\WIFI\wifi.h)(0x5F20B49B)
 I (.\SYSTEM\delay\delay.h)(0x555AC82C)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
@@ -539,7 +540,7 @@ I (.\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (.\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (.\DEMO\demo.c)(0x5F20B8DB)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\demo.o --omf_browse .\obj\demo.crf --depend .\obj\demo.d)
+F (.\DEMO\demo.c)(0x5F261CB9)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\CORE -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\sys -I .\SYSTEM\usart -I .\STM32F10x_FWLib\inc -I .\HARDWARE\CRC16 -I .\HARDWARE\RS485 -I .\HARDWARE\TIMER -I .\HARDWARE\LED -I .\HARDWARE\KEY -I .\DEMO -I .\HARDWARE\WIFI-IH:\ARM\STM32F103XX主机例程\RTE-IH:\ARM\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-IH:\ARM\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\demo.o --omf_browse .\obj\demo.crf --depend .\obj\demo.d)
 I (DEMO\demo.h)(0x5EBA4BBC)
 I (.\SYSTEM\sys\sys.h)(0x550F951C)
 I (.\USER\stm32f10x.h)(0x4D783CB4)
