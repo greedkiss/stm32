@@ -9,11 +9,11 @@ void ESP8266_init(void);
 
 void WIFI_init(void);
 
-#define UART4_NUM 100
+#define USART3_NUM 100
 
-extern u8 receive_str[UART4_NUM];
+extern u8 receive_str[USART3_NUM];
 
 extern void tcp_connect(int len);
 
-extern void uart4SendChars(u8 *str, u16 strlen);
+extern void USART3SendChars(u8 *str, u16 strlen);
 #endif

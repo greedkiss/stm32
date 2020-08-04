@@ -26,7 +26,7 @@ void TestOpr(void)
 	//NH3传感器
 	//设备号0x05
 	if(!RS485Busy){
-//		if(device == 5){
+//		if(device == 5 || time > ){
 //			RS485_RW_Opr(0x05, READ, 0x00, 0x01);
 //		}else if(device == 4){
 //			RS485_RW_Opr(0x04, READ, 0x00, 0x02);

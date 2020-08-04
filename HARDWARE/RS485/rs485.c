@@ -38,7 +38,7 @@ modbus协义基本格式说明：
 /* 串口中断接收到数据的长度变量 */
 static u8 USART_RX_CNT = 0;
 /* 串口中断接收到数据保存的缓冲区 */
-static u8 USART3_RX_BUF[64];
+static u8 USART2_RX_BUF[64];
 /* 用于标识串口接收数据包是否完成标志 */
 static u8 From_Flag = 0;
 /* 通讯标志 主机发送数据后置1 接收到应答后清零 */
@@ -79,7 +79,7 @@ void RS485_Init(u32 bound)
 	GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_IN_FLOATING; 		//浮空输入
 	GPIO_Init(RS485_PROT, &GPIO_InitStructure);  
 	
-	NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn; 			//使能串口3中断
+	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; 			//使能串口3中断
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2; 	//先占优先级2级
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2; 			//从优先级2级
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE; 			//使能外部中断通道
@@ -114,7 +114,7 @@ void Send_Data(u8 *buf,u8 len)
 	for(t=0;t<len;t++)		//循环发送数据
 	{		   
 		while(USART_GetFlagStatus(RS485_USART_NUM, USART_FLAG_TC) == RESET);	  
-		USART_SendData(USART3,buf[t]);
+		USART_SendData(USART2,buf[t]);
 	}	 
 	delay_ms(1);
 	USART_RX_CNT=0;	  
@@ -137,7 +137,7 @@ u8 UartRead(u8 *buf, u8 len)
 	
 	for(i = 0;i < len;i ++)  		//拷贝接收到的数据到接收指针中
 	{
-		*buf = USART3_RX_BUF[i];  	//将数据复制到buf中
+		*buf = USART2_RX_BUF[i];  	//将数据复制到buf中
 		buf  ++;
 	}
 	USART_RX_CNT=0;              	//接收计数器清零
@@ -225,7 +225,7 @@ void UartDriver(void)
 			buf[len-2] = 0x00;
 			//发送数据
 			printf("数据: %d,  %c   %x", (int)buf[0], buf[0], (int)buf[0]);
-			uart4SendChars(buf, len);
+			USART3SendChars(buf, len);
 			
 			/* 判断校验码正确后 无论是读还是写 都清零485忙标志，表示收到应答，释放485，可进行其它命令操作 */
 			RS485Busy = 0;										
@@ -274,15 +274,15 @@ void RS485_RW_Opr(u8 ucAddr,u8 ucCmd,u16 ucReg,u16 uiDate)
  * 返回  值：无
  * 功能说明：串口接收中断处理函数
  ***************************************************************************************************/   
-void USART3_IRQHandler(void)
+void USART2_IRQHandler(void)
 {
 	unsigned char ucTemp;	    
- 	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET) 	//接收到数据
+ 	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) 	//接收到数据
 	{	 
-		ucTemp =USART_ReceiveData(USART3); 					//读取接收到的数据
+		ucTemp =USART_ReceiveData(USART2); 					//读取接收到的数据
 		if(USART_RX_CNT < 64)
 		{
-			USART3_RX_BUF[USART_RX_CNT] = ucTemp;			//记录接收到的值
+			USART2_RX_BUF[USART_RX_CNT] = ucTemp;			//记录接收到的值
 			USART_RX_CNT ++;								//接收数据增加1 
 		} 
 	}  											 
